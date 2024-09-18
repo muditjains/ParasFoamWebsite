@@ -41,6 +41,10 @@ TABLE OF CONTENTS
 /* --------------- Global Styles --------------- */
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Condensed:400,700);
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     color: #8d8d8d;
     font-family: 'Roboto', sans-serif;
