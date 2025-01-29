@@ -1,18 +1,7 @@
-/*
-
-Page: main JS
-Author: Surjith S M
-URI: http://surjithctly.in/
-Version: 1.0
-
-*/
-
 (function($) {
     "use strict";
 
-
     /* ============= Preloader Close on Click ============= */
-
     if ($('.loader-wrapper').length) {
         $('.loader-wrapper').on('click', function() {
             $(this).fadeOut();
@@ -25,6 +14,7 @@ Version: 1.0
             animation: "fade"
         });
     }
+
     /* ============= Partner Logo Carousel ============= */
     if ($('.logo-slides').length) {
         $(".logo-slides").owlCarousel({
@@ -51,14 +41,11 @@ Version: 1.0
                     items: 5
                 }
             }
-
         });
     }
 
     /* ============= Percentage Slider ============= */
-
     if ($('#skills').length) {
-
         var skillsDiv = $('#skills');
 
         $(window).on('scroll', function() {
@@ -73,11 +60,9 @@ Version: 1.0
                 });
             }
         });
-
     }
 
     /* ============= Service Slider ============= */
-
     if ($('.service-slider').length) {
         $('.service-slider').flexslider({
             animation: "slide",
@@ -86,6 +71,7 @@ Version: 1.0
             touch: true
         });
     }
+
     /* ============= Blog Slider ============= */
     if ($('.blog-slide').length) {
         $('.blog-slide').flexslider({
@@ -102,16 +88,31 @@ Version: 1.0
         });
     }
 
-
+    /* ============= Preloader on Window Load ============= */
     $(window).load(function() {
-
-        /* ============= Preloader ============= */
-
         if ($('.loader-wrapper').length) {
             $('.loader-wrapper').fadeOut();
         }
-
-
-    }); // End Window.Load
+    });
 
 })(jQuery);
+
+/* ============= PDF Catalog View More Function ============= */
+// Keep this outside the jQuery IIFE since it uses vanilla JavaScript
+document.addEventListener('DOMContentLoaded', function() {
+    const viewMoreBtn = document.getElementById('viewMoreBtn');
+    const moreDocs = document.getElementById('moreDocs');
+    
+    if (viewMoreBtn && moreDocs) {  // Add null check
+        viewMoreBtn.addEventListener('click', function() {
+            moreDocs.classList.toggle('show');
+            viewMoreBtn.classList.toggle('active');
+            
+            if (moreDocs.classList.contains('show')) {
+                viewMoreBtn.innerHTML = 'View Less <i class="fa fa-angle-down"></i>';
+            } else {
+                viewMoreBtn.innerHTML = 'View More <i class="fa fa-angle-down"></i>';
+            }
+        });
+    }
+});

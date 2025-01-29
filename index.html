@@ -75,15 +75,23 @@
                             </button>
                         </div>
                         <div class="col-md-9 top-info-social">
-                            <div class="pull-right">
-                                <div class="top-info d-flex align-items-center">
-                                    <div class="contact-item call text-right mr-4">
-                                        <h3 style="font-size: 1.5em; font-weight: bold; color: #333;">📞 CALL US</h3>
-                                        <p style="font-size: 1.2em; color: #666;">+91 80107 72727</p>
+                            <div class="contact-wrapper">
+                                <div class="top-info">
+                                    <div class="contact-item">
+                                        <div class="contact-content">
+                                            <h3 class="contact-title">
+                                                <i class="fa fa-phone contact-icon"></i> CALL US
+                                            </h3>
+                                            <p class="contact-text">+91 12345 72727</p>
+                                        </div>
                                     </div>
-                                    <div class="contact-item email text-right">
-                                        <h3 style="font-size: 1.5em; font-weight: bold; color: #333;">✉️ EMAIL US</h3>
-                                        <p style="font-size: 1.2em; color: #666;">sales@parasfoam.com</p>
+                                    <div class="contact-item">
+                                        <div class="contact-content">
+                                            <h3 class="contact-title">
+                                                <i class="fa fa-envelope contact-icon"></i> EMAIL US
+                                            </h3>
+                                            <p class="contact-text">sales@parasfoam.com</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -135,6 +143,89 @@
                 </div>
             </section>
 
+            <
+<section class="home-catalog">
+    <div class="container">
+        <div class="row catalog">
+            <div class="col-md-12">
+                <h2 class="catalog-title color-title">CATALOG</h2>
+                <h4 class="catalog-subtitle subtitle">Download Our Product Information</h4>
+                
+                <div class="catalog-items row" id="initialDocs">
+                    <div class="col-md-3">
+                        <div class="catalog-item">
+                            <i class="fa fa-file-pdf-o"></i>
+                            <h5>Product Catalog 2024</h5>
+                            <a href="pdfs/product-catalog.pdf" class="btn btn-primary btn-download" download>
+                                Download <i class="fa fa-download"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3">
+                        <div class="catalog-item">
+                            <i class="fa fa-file-pdf-o"></i>
+                            <h5>Technical Specs</h5>
+                            <a href="pdfs/technical-specs.pdf" class="btn btn-primary btn-download" download>
+                                Download <i class="fa fa-download"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3">
+                        <div class="catalog-item">
+                            <i class="fa fa-file-pdf-o"></i>
+                            <h5>Installation Guide</h5>
+                            <a href="pdfs/installation-guide.pdf" class="btn btn-primary btn-download" download>
+                                Download <i class="fa fa-download"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="catalog-item">
+                            <i class="fa fa-file-pdf-o"></i>
+                            <h5>Installation Guide</h5>
+                            <a href="pdfs/installation-guide.pdf" class="btn btn-primary btn-download" download>
+                                Download <i class="fa fa-download"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hidden documents that will be shown when "View More" is clicked -->
+                <div class="catalog-items row hidden-docs" id="moreDocs">
+                    <div class="col-md-3">
+                        <div class="catalog-item">
+                            <i class="fa fa-file-pdf-o"></i>
+                            <h5>Safety Manual</h5>
+                            <a href="pdfs/safety-manual.pdf" class="btn btn-primary btn-download" download>
+                                Download <i class="fa fa-download"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3">
+                        <div class="catalog-item">
+                            <i class="fa fa-file-pdf-o"></i>
+                            <h5>Maintenance Guide</h5>
+                            <a href="pdfs/maintenance-guide.pdf" class="btn btn-primary btn-download" download>
+                                Download <i class="fa fa-download"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- View More button -->
+                <div class="text-center view-more-container">
+                    <button id="viewMoreBtn" class="btn btn-link">
+                        View More <i class="fa fa-angle-down"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
             <section class="home-company">
                 <div class="container">
                     <div class="row company">

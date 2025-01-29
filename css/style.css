@@ -3886,3 +3886,144 @@ ul.nav-tabs {
     height: 100%;
     overflow: hidden;
 }
+
+
+.home-catalog {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+.catalog-items {
+    margin-top: 30px;
+}
+
+.catalog-item {
+    text-align: center;
+    padding: 20px;
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+    margin-bottom: 15px;
+    min-height: 160px; /* Ensures consistent height */
+}
+
+.catalog-item:hover {
+    transform: translateY(-3px);
+}
+
+.catalog-item i.fa-file-pdf-o {
+    font-size: 32px;
+    color: #dc3545;
+    margin-bottom: 10px;
+}
+
+.catalog-item h5 {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 14px;
+}
+
+.btn-download {
+    padding: 6px 12px;
+    font-size: 13px;
+}
+
+.btn-download i {
+    margin-left: 5px;
+}
+
+/* View More styles */
+.hidden-docs {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hidden-docs.show {
+    display: block;
+    opacity: 1;
+}
+
+.view-more-container {
+    margin-top: 20px;
+}
+
+#viewMoreBtn {
+    color: #007bff;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+#viewMoreBtn:hover {
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+#viewMoreBtn i {
+    transition: transform 0.3s ease;
+}
+
+#viewMoreBtn.active i {
+    transform: rotate(180deg);
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 0;
+}
+
+.top-info {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contact-item {
+    text-align: right;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+.contact-icon {
+    color: #007bff;  /* or your brand color */
+}
+
+.contact-text {
+    font-size: 1.1rem;
+    color: #666;
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .top-info {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .contact-item {
+        text-align: center;
+    }
+
+    .contact-title {
+        justify-content: center;
+    }
+}
