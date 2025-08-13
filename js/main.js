@@ -109,10 +109,53 @@ document.addEventListener('DOMContentLoaded', function() {
             viewMoreBtn.classList.toggle('active');
             
             if (moreDocs.classList.contains('show')) {
-                viewMoreBtn.innerHTML = 'View Less <i class="fa fa-angle-down"></i>';
+                viewMoreBtn.innerHTML = 'View Less <i class="fa fa-angle-up"></i>';
             } else {
                 viewMoreBtn.innerHTML = 'View More <i class="fa fa-angle-down"></i>';
             }
         });
     }
+
+    /* ============= Form handlers removed - buttons are for display only ============= */
+
+    /* ============= Smooth Scrolling for Anchor Links ============= */
+    const anchorLinks = document.querySelectorAll('a[href^="#"]');
+    anchorLinks.forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            if (href !== '#' && href !== '#0') {
+                const target = document.querySelector(href);
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            }
+        });
+    });
+
+    /* ============= Phone Number Click Handler ============= */
+    const phoneNumbers = document.querySelectorAll('.contact-text');
+    phoneNumbers.forEach(function(phone) {
+        if (phone.textContent.includes('+1')) {
+            phone.style.cursor = 'pointer';
+            phone.addEventListener('click', function() {
+                const phoneNumber = this.textContent.replace(/\s/g, '');
+                window.location.href = 'tel:' + phoneNumber;
+            });
+        }
+    });
+
+    /* ============= Email Click Handler ============= */
+    const emailElements = document.querySelectorAll('.contact-text');
+    emailElements.forEach(function(email) {
+        if (email.textContent.includes('@')) {
+            email.style.cursor = 'pointer';
+            email.addEventListener('click', function() {
+                window.location.href = 'mailto:' + this.textContent;
+            });
+        }
+    });
 });

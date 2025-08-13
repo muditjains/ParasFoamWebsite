@@ -4056,3 +4056,183 @@ ul.nav-tabs {
         justify-content: center;
     }
 }
+
+/* Contact Section Styles */
+.home-contact {
+    background: #f4f5f8;
+    padding: 80px 0;
+}
+
+.home-contact .section-title {
+    margin-bottom: 50px;
+}
+
+.home-contact .well-form {
+    background: #ffffff;
+    border: 1px solid rgba(244, 244, 244, 0.8);
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    padding: 40px;
+}
+
+.home-contact .form-control {
+    border: 1px solid #e1e5e9;
+    background: #ffffff;
+    box-shadow: none;
+    border-radius: 4px;
+    line-height: 48px;
+    height: auto;
+    padding: 0 20px;
+    font-size: 16px;
+}
+
+.home-contact .form-control:focus {
+    border-color: #093EB6;
+    box-shadow: 0 0 0 0.2rem rgba(9, 62, 182, 0.25);
+}
+
+.home-contact select.form-control {
+    height: 48px;
+    line-height: 48px;
+}
+
+.home-contact textarea.form-control {
+    min-height: 120px;
+    line-height: 1.5;
+    padding: 15px 20px;
+}
+
+#js-quote-btn {
+    padding: 0 40px;
+    line-height: 54px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+#js-quote-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+/* Modal Styles */
+.modal-content {
+    border-radius: 6px;
+    border: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+    background: #093EB6;
+    color: white;
+    border-radius: 6px 6px 0 0;
+    padding: 20px 30px;
+}
+
+.modal-header .close {
+    color: white;
+    opacity: 0.8;
+    font-size: 28px;
+}
+
+.modal-header .close:hover {
+    opacity: 1;
+}
+
+.modal-title {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.modal-body {
+    padding: 30px;
+}
+
+.modal-footer {
+    padding: 20px 30px;
+    border-top: 1px solid #e9ecef;
+}
+
+#consultation_form .form-control {
+    border: 1px solid #e1e5e9;
+    border-radius: 4px;
+    padding: 0 15px;
+    line-height: 44px;
+    margin-bottom: 20px;
+}
+
+#consultation_form textarea.form-control {
+    line-height: 1.5;
+    padding: 12px 15px;
+    min-height: 100px;
+}
+
+#consultation_form label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+}
+
+#js-consultation-btn {
+    padding: 0 30px;
+    line-height: 44px;
+    font-weight: bold;
+}
+
+/* Success/Error Messages */
+.alert {
+    border-radius: 4px;
+    font-size: 15px;
+    padding: 15px 20px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+/* Responsive adjustments for contact section */
+@media (max-width: 767px) {
+    .home-contact .well-form {
+        padding: 30px 25px;
+    }
+    
+    .modal-body {
+        padding: 25px 20px;
+    }
+    
+    .modal-header,
+    .modal-footer {
+        padding: 15px 20px;
+    }
+}
+
+/* Company CTA Buttons Enhancement */
+.company-cta-buttons {
+    margin-top: 30px;
+}
+
+.company-cta-buttons .btn {
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.company-cta-buttons .btn:last-child {
+    margin-right: 0;
+}
+
+@media (max-width: 480px) {
+    .company-cta-buttons .btn {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .company-cta-buttons .btn:last-child {
+        margin-bottom: 0;
+    }
+}
