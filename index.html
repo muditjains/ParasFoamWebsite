@@ -65,7 +65,7 @@
                     <div class="container">
                         <div class="col-md-3 logo">
                             <!-- Main Logo -->
-                            <a href="index.html"><img src="images/logo.png" alt="Offshore Logo" /></a>
+                            <a href="index.html"><img src="images/logo.png" alt="The Polymer Engineering Logo" /></a>
                             <!-- Responsive Toggle Menu -->
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
                                 <span class="sr-only"> Main Menu </span>
@@ -102,7 +102,14 @@
                 <!-- Main Navigation Section -->
                 <nav id="navbar" class="collapse navbar-collapse main-menu">
                     <div class="container">
-                        
+                        <ul class="main-menu">
+                            <li class="active"><a href="#home">Home</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#process-writeup">Our Process</a></li>
+                            <li><a href="#testimonials">Testimonials</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
                     </div>
                 </nav>
             </div>
@@ -112,30 +119,36 @@
         <!-- Main Content Section -->
         <main class="main">
 
-            <section class="home-slider">
+            <section class="home-slider" id="home">
                 <div class="flexslider">
                     <ul class="slides">
                         <li class="has-overlay">
-                            <img src="images/testing.jpeg" alt="Slider 1" />
+                            <img src="images/testing.jpeg" alt="Pipeline Pigging Solutions" />
                             <div class="slider-content">
                                 <div class="container">
-                                    <h2> Leading the Way in Advanced Pipeline Pigging Solutions for Optimal Efficiency </h2>
-                                    <p> Ensuring Pipeline Integrity with Innovative Foam Pigging for Reliable Performance while also
-                                        <br> Revolutionizing Pipeline Maintenance with Cutting-Edge Foam Pigging Technologies Worldwide</p>
-                                    <a href="#services" class="btn primary-btn"> KNOW MORE <i class="fa fa-angle-right"></i> </a>
+                                    <h2> Advanced Pipeline Pigging Solutions </h2>
+                                    <p> Ensuring pipeline integrity with innovative foam technology for reliable performance
+                                        <br> Trusted by industry leaders worldwide for optimal efficiency</p>
+                                    <a href="#services" class="btn primary-btn pulse-btn"> EXPLORE SOLUTIONS <i class="fa fa-angle-right"></i> </a>
+                                    <div class="trust-badges">
+                                        <span class="badge-item"><i class="fa fa-check-circle"></i> ISO Certified</span>
+                                        <span class="badge-item"><i class="fa fa-check-circle"></i> 20+ Years Experience</span>
+                                    </div>
                                 </div>
                             </div>
                         </li>
                         <li class="has-overlay">
-                            <img src="images/testing1.jpeg" alt="Slider 2" />
+                            <img src="images/testing1.jpeg" alt="Next-Gen Foam Pigging" />
                             <div class="slider-content text-center">
                                 <div class="container">
-
-                                    <h2>Transforming Pipeline Operations with Next-Generation Foam Pigging Technologies</h2>
-                                    <p> Delivering Unrivaled Precision and Durability for Seamless Pipeline Performance
-                                        <br> Driving Innovation in Foam Pigging for Sustainable and Efficient Flow Solutions
-                                        </p>
-                                    <a href="#services" class="btn primary-btn"> KNOW MORE <i class="fa fa-angle-right"></i> </a>
+                                    <h2>Next-Generation Foam Pigging Technology</h2>
+                                    <p> Delivering unrivaled precision and durability for seamless operations
+                                        <br> Driving innovation for sustainable flow solutions</p>
+                                    <a href="#services" class="btn primary-btn pulse-btn"> KNOW MORE <i class="fa fa-angle-right"></i> </a>
+                                    <div class="trust-badges">
+                                        <span class="badge-item"><i class="fa fa-check-circle"></i> Industry Leader</span>
+                                        <span class="badge-item"><i class="fa fa-check-circle"></i> 24/7 Support</span>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -143,115 +156,122 @@
                 </div>
             </section>
 
-            <
-<section class="home-catalog">
-    <div class="container">
-        <div class="row catalog">
-            <div class="col-md-12">
-                <h2 class="catalog-title color-title">CATALOG</h2>
-                <h4 class="catalog-subtitle subtitle">Download Our Product Information</h4>
-                
-                <div class="catalog-items row" id="initialDocs">
-                    <div class="col-md-3">
-                        <div class="catalog-item">
-                            <i class="fa fa-file-pdf-o"></i>
-                            <h5>Product Catalog 2024</h5>
-                            <a href="pdfs/product-catalog.pdf" class="btn btn-primary btn-download" download>
-                                Download <i class="fa fa-download"></i>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-3">
-                        <div class="catalog-item">
-                            <i class="fa fa-file-pdf-o"></i>
-                            <h5>Technical Specs</h5>
-                            <a href="pdfs/technical-specs.pdf" class="btn btn-primary btn-download" download>
-                                Download <i class="fa fa-download"></i>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-3">
-                        <div class="catalog-item">
-                            <i class="fa fa-file-pdf-o"></i>
-                            <h5>Installation Guide</h5>
-                            <a href="pdfs/installation-guide.pdf" class="btn btn-primary btn-download" download>
-                                Download <i class="fa fa-download"></i>
-                            </a>
-                        </div>
-                    </div>
+            <section class="home-catalog">
+                <div class="container">
+                    <div class="row catalog">
+                        <div class="col-md-12">
+                            <h2 class="catalog-title color-title">PRODUCT CATALOG</h2>
+                            <h4 class="catalog-subtitle subtitle">Download Our Technical Documentation</h4>
+                            
+                            <div class="catalog-items row" id="initialDocs">
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="catalog-item">
+                                        <i class="fa fa-file-pdf-o catalog-icon"></i>
+                                        <h5>Product Catalog 2024</h5>
+                                        <p class="catalog-desc">Complete product line specifications</p>
+                                        <a href="pdfs/product-catalog.pdf" class="btn btn-primary btn-download" download>
+                                            Download <i class="fa fa-download"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="catalog-item">
+                                        <i class="fa fa-file-text-o catalog-icon catalog-icon-blue"></i>
+                                        <h5>Technical Specifications</h5>
+                                        <p class="catalog-desc">Detailed technical data sheets</p>
+                                        <a href="pdfs/technical-specs.pdf" class="btn btn-primary btn-download" download>
+                                            Download <i class="fa fa-download"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="catalog-item">
+                                        <i class="fa fa-wrench catalog-icon catalog-icon-orange"></i>
+                                        <h5>Installation Guide</h5>
+                                        <p class="catalog-desc">Step-by-step installation manual</p>
+                                        <a href="pdfs/installation-guide.pdf" class="btn btn-primary btn-download" download>
+                                            Download <i class="fa fa-download"></i>
+                                        </a>
+                                    </div>
+                                </div>
 
-                    <div class="col-md-3">
-                        <div class="catalog-item">
-                            <i class="fa fa-file-pdf-o"></i>
-                            <h5>Installation Guide</h5>
-                            <a href="pdfs/installation-guide.pdf" class="btn btn-primary btn-download" download>
-                                Download <i class="fa fa-download"></i>
-                            </a>
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="catalog-item">
+                                        <i class="fa fa-shield catalog-icon catalog-icon-green"></i>
+                                        <h5>Safety Manual</h5>
+                                        <p class="catalog-desc">Comprehensive safety procedures</p>
+                                        <a href="pdfs/safety-manual.pdf" class="btn btn-primary btn-download" download>
+                                            Download <i class="fa fa-download"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Hidden documents that will be shown when "View More" is clicked -->
+                            <div class="catalog-items row hidden-docs" id="moreDocs">
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="catalog-item">
+                                        <i class="fa fa-cog catalog-icon catalog-icon-purple"></i>
+                                        <h5>Maintenance Guide</h5>
+                                        <p class="catalog-desc">Preventive maintenance procedures</p>
+                                        <a href="pdfs/maintenance-guide.pdf" class="btn btn-primary btn-download" download>
+                                            Download <i class="fa fa-download"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="catalog-item">
+                                        <i class="fa fa-certificate catalog-icon catalog-icon-teal"></i>
+                                        <h5>Compliance Documents</h5>
+                                        <p class="catalog-desc">Industry certifications & standards</p>
+                                        <a href="pdfs/compliance.pdf" class="btn btn-primary btn-download" download>
+                                            Download <i class="fa fa-download"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- View More button -->
+                            <div class="text-center view-more-container">
+                                <button id="viewMoreBtn" class="btn btn-link">
+                                    View More <i class="fa fa-angle-down"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </section>
 
-                <!-- Hidden documents that will be shown when "View More" is clicked -->
-                <div class="catalog-items row hidden-docs" id="moreDocs">
-                    <div class="col-md-3">
-                        <div class="catalog-item">
-                            <i class="fa fa-file-pdf-o"></i>
-                            <h5>Safety Manual</h5>
-                            <a href="pdfs/safety-manual.pdf" class="btn btn-primary btn-download" download>
-                                Download <i class="fa fa-download"></i>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-3">
-                        <div class="catalog-item">
-                            <i class="fa fa-file-pdf-o"></i>
-                            <h5>Maintenance Guide</h5>
-                            <a href="pdfs/maintenance-guide.pdf" class="btn btn-primary btn-download" download>
-                                Download <i class="fa fa-download"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- View More button -->
-                <div class="text-center view-more-container">
-                    <button id="viewMoreBtn" class="btn btn-link">
-                        View More <i class="fa fa-angle-down"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-            <section class="home-company">
+            <section class="home-company" id="about">
                 <div class="container">
                     <div class="row company">
-                        <div class="col-md-5 col-sm-8">
+                        <div class="col-md-5 col-sm-12">
                             <div class="company-details">
                                 <h2 class="company-title color-title"> THE COMPANY </h2>
-                                <h4 class="company-subtitle subtitle"> Unleashing Efficiency: Transforming Pipeline Maintenance with Cutting-Edge Foam Pig Solutions
+                                <h4 class="company-subtitle subtitle"> Transforming Pipeline Maintenance with Cutting-Edge Foam Pig Solutions
                                 </h4>
-                                <p> At The Polymer Engineering, our mission is to lead the industry in providing innovative and reliable foam pig solutions for pipeline maintenance and integrity. We are dedicated to delivering high-quality products that optimize pipeline performance, enhance safety, and minimize environmental impact. With a commitment to excellence and customer satisfaction, we strive to be the trusted partner for our clients in ensuring the efficiency and longevity of their pipelines.
+                                <p> At The Polymer Engineering, our mission is to lead the industry in providing innovative and reliable foam pig solutions for pipeline maintenance and integrity.</p>
+                                
+                                <ul class="company-highlights">
+                                    <li><i class="fa fa-check-circle"></i> High-quality products optimizing pipeline performance</li>
+                                    <li><i class="fa fa-check-circle"></i> Enhanced safety and minimal environmental impact</li>
+                                    <li><i class="fa fa-check-circle"></i> Commitment to excellence and customer satisfaction</li>
+                                    <li><i class="fa fa-check-circle"></i> Trusted partner for pipeline efficiency and longevity</li>
+                                </ul>
 
-
-
-                                </p>
                                 <div class="company-cta-buttons">
-                                    <a href="#contact" class="btn btn-primary" role="button"> GET A QUOTE <i class="fa fa-calculator"></i></a>
-                                    <a href="#process-writeup" class="btn btn-default" role="button"> LEARN ABOUT OUR PROCESS <i class="fa fa-angle-down"></i></a>
+                                    <a href="#contact" class="btn btn-primary btn-lg" role="button"> GET A QUOTE <i class="fa fa-calculator"></i></a>
+                                    <a href="#process-writeup" class="btn btn-default btn-lg" role="button"> OUR PROCESS <i class="fa fa-angle-down"></i></a>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-md-7 col-sm-12">
-                            <div class="company-image">
-    
-                                <div class="img-right hover-effect">
-                                    <img src="images/testing1.jpeg" alt="Company Image" />
-                                </div>
+                            <div class="company-image-simple">
+                                <img src="images/testing1.jpeg" alt="The Polymer Engineering Operations" class="img-responsive company-main-image" />
                             </div>
                         </div>
                     </div>
@@ -261,23 +281,18 @@
             <section class="home-ceo">
                 <div class="container">
                     <div class="row ceo">
-                        <div class="col-md-8 col-md-offset-2">
+                        <div class="col-md-12">
                             <div class="ceo-details text-center">
                                 <h2 class="ceo-title color-title"> WORD FROM CEO </h2>
                                 <h4 class="ceo-subtitle subtitle"> LEADING THE FUTURE OF PIPELINE TECHNOLOGY </h4>
-                                <p> When I founded The Polymer Engineering, I envisioned a company that would revolutionize pipeline maintenance through cutting-edge foam pig technology. Today, we stand as industry leaders, transforming how energy companies approach pipeline integrity and operational efficiency. Our proprietary polymer formulations and advanced manufacturing processes don't just meet industry standards—they set new benchmarks for performance and reliability.
-                                </p>
-                                <p> Every foam pig we manufacture carries our promise of excellence, backed by decades of engineering expertise and an unwavering commitment to our clients' success. Together, we're not just maintaining pipelines—we're powering the future of energy infrastructure.</p>
-                                <p class="ceo-name">Sambal Jain, CEO & Founder</p>
+                                <p> When I founded The Polymer Engineering, I envisioned a company that would revolutionize pipeline maintenance through cutting-edge foam pig technology. Today, we stand as industry leaders, transforming how energy companies approach pipeline integrity and operational efficiency.</p>
+                                <p> Our proprietary polymer formulations and advanced manufacturing processes don't just meet industry standards—they set new benchmarks for performance and reliability. Every foam pig we manufacture carries our promise of excellence, backed by decades of engineering expertise and an unwavering commitment to our clients' success.</p>
+                                <p class="ceo-name"><strong>Sambal Jain</strong>, CEO & Founder</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
-
-
-            
 
             <section class="home-process" id="process-writeup">
                 <div class="container">
@@ -285,30 +300,31 @@
                         <div class="col-sm-6">
                             <h2 class="process-title title-2"> OUR PROCESS </h2>
                             <h4 class="process-subtitle subtitle-2"> Delivering Excellence Through Proven Manufacturing and Service Methodologies </h4>
-                            <p> Our comprehensive process begins with understanding your specific pipeline requirements and operational challenges. We utilize advanced polymer engineering techniques and rigorous quality control measures to manufacture foam pigs that exceed industry standards. From initial consultation through product delivery and ongoing support, our systematic approach ensures optimal performance, reliability, and customer satisfaction at every stage of your pipeline maintenance operations. </p>
+                            <p> Our comprehensive process begins with understanding your specific pipeline requirements and operational challenges. We utilize advanced polymer engineering techniques and rigorous quality control measures to manufacture foam pigs that exceed industry standards.</p>
+                            <p> From initial consultation through product delivery and ongoing support, our systematic approach ensures optimal performance, reliability, and customer satisfaction at every stage of your pipeline maintenance operations. </p>
                         </div>
 
                         <div class="col-sm-6">
                             <div id="skills" class="process-bar">
-                                <div class="skillbar-title"> CUSTOMER SATISFACTION </div>
+                                <div class="skillbar-title"> <i class="fa fa-star"></i> CUSTOMER SATISFACTION </div>
                                 <div class="skillbar" data-percent="96%">
                                     <div class="skillbar-bar"> </div>
                                     <div class="skill-bar-percent">96%</div>
                                 </div>
 
-                                <div class="skillbar-title"> PARTNERSHIP EFFORTS </div>
+                                <div class="skillbar-title"> <i class="fa fa-users"></i> PARTNERSHIP EFFORTS </div>
                                 <div class="skillbar" data-percent="92%">
                                     <div class="skillbar-bar"> </div>
                                     <div class="skill-bar-percent">92%</div>
                                 </div>
 
-                                <div class="skillbar-title"> INNOVATION</div>
+                                <div class="skillbar-title"> <i class="fa fa-lightbulb-o"></i> INNOVATION</div>
                                 <div class="skillbar" data-percent="89%">
                                     <div class="skillbar-bar"> </div>
                                     <div class="skill-bar-percent">89%</div>
                                 </div>
 
-                                <div class="skillbar-title"> QUALITY </div>
+                                <div class="skillbar-title"> <i class="fa fa-trophy"></i> QUALITY </div>
                                 <div class="skillbar" data-percent="98%">
                                     <div class="skillbar-bar"> </div>
                                     <div class="skill-bar-percent">98%</div>
@@ -322,32 +338,40 @@
             <section class="home-stats">
                 <div class="container">
                     <div class="row stats">
-                        <div class="col-md-3 col-xs-6">
-                            <img src="images/globe.png" alt="" />
+                        <div class="col-md-3 col-xs-6 stat-item">
+                            <div class="stat-icon">
+                                <i class="fa fa-globe"></i>
+                            </div>
                             <div class="stats-info">
                                 <h4 class="counter">20</h4>
                                 <p>Customers</p>
                             </div>
                         </div>
 
-                        <div class="col-md-3 col-xs-6">
-                            <img src="images/friends.png" alt="" />
+                        <div class="col-md-3 col-xs-6 stat-item">
+                            <div class="stat-icon">
+                                <i class="fa fa-users"></i>
+                            </div>
                             <div class="stats-info">
                                 <h4 class="counter">100</h4>
                                 <p>Employees</p>
                             </div>
                         </div>
 
-                        <div class="col-md-3 col-xs-6">
-                            <img src="images/fire.png" alt="" />
+                        <div class="col-md-3 col-xs-6 stat-item">
+                            <div class="stat-icon">
+                                <i class="fa fa-truck"></i>
+                            </div>
                             <div class="stats-info">
                                 <h4 class="counter">480</h4>
                                 <p>Annual Shipments</p>
                             </div>
                         </div>
 
-                        <div class="col-md-3 col-xs-6">
-                            <img src="images/badge.png" alt="" />
+                        <div class="col-md-3 col-xs-6 stat-item">
+                            <div class="stat-icon">
+                                <i class="fa fa-trophy"></i>
+                            </div>
                             <div class="stats-info">
                                 <h4 class="counter">35</h4>
                                 <p>Awards &amp; Recognitions</p>
@@ -361,133 +385,165 @@
             <section class="home-services-other" id="services">
                 <div class="container">
                     <div class="section-title text-center">
-                        <h2 class="title-services-other title-2">SERVICES</h2>
+                        <h2 class="title-services-other title-2">OUR SERVICES</h2>
                         <h4 class="subtitle-services-other subtitle-2">Comprehensive foam pig solutions for pipeline maintenance <br/>and integrity assurance.</h4>
                         <div class="spacer-50"> </div>
                     </div>
 
                     <div class="row services-other">
                         <div class="col-sm-4">
-                            <div class="img-box">
-                                <img src="images/service-icon5.png" alt="PIPELINE CLEANING" />
-                            </div>
-                            <div class="services-info">
-                                <h4 class="services-title-one subtitle">PIPELINE CLEANING</h4>
-                                <p>Comprehensive pipeline cleaning services using advanced foam pig technology to remove debris, liquids, and contaminants while maintaining pipeline integrity.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-4">
-                            <div class="img-box">
-                                <img src="images/service-icon1.png" alt="FOAM PIG MANUFACTURING" />
-                            </div>
-                            <div class="services-info">
-                                <h4 class="services-title-one subtitle">FOAM PIG MANUFACTURING</h4>
-                                <p>Custom foam pig manufacturing with proprietary polymer formulations designed for optimal density, durability, and performance across various pipeline applications.</p>
+                            <div class="service-card">
+                                <div class="service-icon-box">
+                                    <i class="fa fa-tint"></i>
+                                </div>
+                                <div class="services-info">
+                                    <h4 class="services-title-one subtitle">PIPELINE CLEANING</h4>
+                                    <p>Comprehensive pipeline cleaning services using advanced foam pig technology to remove debris, liquids, and contaminants while maintaining pipeline integrity.</p>
+                                </div>
                             </div>
                         </div>
 
                         <div class="col-sm-4">
-                            <div class="img-box">
-                                <img src="images/service-icon3.png" alt="PIPELINE MAINTENANCE" />
+                            <div class="service-card">
+                                <div class="service-icon-box">
+                                    <i class="fa fa-industry"></i>
+                                </div>
+                                <div class="services-info">
+                                    <h4 class="services-title-one subtitle">FOAM PIG MANUFACTURING</h4>
+                                    <p>Custom foam pig manufacturing with proprietary polymer formulations designed for optimal density, durability, and performance across various pipeline applications.</p>
+                                </div>
                             </div>
-                            <div class="services-info">
-                                <h4 class="services-title-one subtitle">PIPELINE MAINTENANCE</h4>
-                                <p>Complete pipeline maintenance solutions including preventive maintenance programs, emergency response services, and integrity testing for maximum operational efficiency.</p>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="service-card">
+                                <div class="service-icon-box">
+                                    <i class="fa fa-wrench"></i>
+                                </div>
+                                <div class="services-info">
+                                    <h4 class="services-title-one subtitle">PIPELINE MAINTENANCE</h4>
+                                    <p>Complete pipeline maintenance solutions including preventive maintenance programs, emergency response services, and integrity testing for maximum operational efficiency.</p>
+                                </div>
                             </div>
                         </div>
 
                         <div class="clearfix spacer-70"></div>
 
                         <div class="col-sm-4">
-                            <div class="img-box">
-                                <img src="images/service-icon4.png" alt="TECHNICAL CONSULTING" />
-                            </div>
-                            <div class="services-info">
-                                <h4 class="services-title-one subtitle">TECHNICAL CONSULTING</h4>
-                                <p>Expert technical consulting services for pipeline optimization, foam pig selection, and maintenance strategy development tailored to your specific operational requirements.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-4">
-                            <div class="img-box">
-                                <img src="images/service-icon5.png" alt="QUALITY TESTING" />
-                            </div>
-                            <div class="services-info">
-                                <h4 class="services-title-one subtitle">QUALITY TESTING</h4>
-                                <p>Rigorous quality testing and validation services including material testing, performance analysis, and compliance verification to ensure optimal product performance.</p>
+                            <div class="service-card">
+                                <div class="service-icon-box">
+                                    <i class="fa fa-comments"></i>
+                                </div>
+                                <div class="services-info">
+                                    <h4 class="services-title-one subtitle">TECHNICAL CONSULTING</h4>
+                                    <p>Expert technical consulting services for pipeline optimization, foam pig selection, and maintenance strategy development tailored to your specific operational requirements.</p>
+                                </div>
                             </div>
                         </div>
 
                         <div class="col-sm-4">
-                            <div class="img-box">
-                                <img src="images/service-icon6.png" alt="EMERGENCY RESPONSE" />
-                            </div>
-                            <div class="services-info">
-                                <h4 class="services-title-one subtitle">EMERGENCY RESPONSE</h4>
-                                <p>24/7 emergency response services for urgent pipeline issues, providing rapid deployment of foam pigging solutions and expert technical support when you need it most.</p>
+                            <div class="service-card">
+                                <div class="service-icon-box">
+                                    <i class="fa fa-check-square-o"></i>
+                                </div>
+                                <div class="services-info">
+                                    <h4 class="services-title-one subtitle">QUALITY TESTING</h4>
+                                    <p>Rigorous quality testing and validation services including material testing, performance analysis, and compliance verification to ensure optimal product performance.</p>
+                                </div>
                             </div>
                         </div>
 
+                        <div class="col-sm-4">
+                            <div class="service-card">
+                                <div class="service-icon-box">
+                                    <i class="fa fa-bolt"></i>
+                                </div>
+                                <div class="services-info">
+                                    <h4 class="services-title-one subtitle">EMERGENCY RESPONSE</h4>
+                                    <p>24/7 emergency response services for urgent pipeline issues, providing rapid deployment of foam pigging solutions and expert technical support when you need it most.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="text-center" style="margin-top: 50px;">
-                        <a href="#contact" class="btn btn-primary" role="button"> REQUEST CONSULTATION <i class="fa fa-comments"></i></a>
-                        <a href="#contact" class="btn btn-default" role="button"> CONTACT US <i class="fa fa-phone"></i></a>
+                    <div class="text-center services-cta-section">
+                        <a href="#contact" class="btn btn-primary btn-lg" role="button"> REQUEST CONSULTATION <i class="fa fa-comments"></i></a>
+                        <a href="#contact" class="btn btn-default btn-lg" role="button"> CONTACT US <i class="fa fa-phone"></i></a>
                     </div>
 
                 </div>
             </section>
 
-            <section class="home-testimonials">
-
+            <section class="home-testimonials" id="testimonials">
                 <div class="container">
                     <div class="section-title text-center">
-                        <h2 class="title-testimonials color-title">DON’T TAKE OUR WORD</h2>
-                        <h2 class="subtitle-testimonials title-2">CLIENT TESTIMONIALS</h2>
+                        <h2 class="title-testimonials color-title">CLIENT TESTIMONIALS</h2>
+                        <h2 class="subtitle-testimonials title-2">What Our Clients Say</h2>
                         <div class="spacer-50"> </div>
                     </div>
                     <div class="row">
                         <div class="col-md-4">
-                            <blockquote>The Polymer Engineering's foam pigs have revolutionized our pipeline maintenance operations. Their products consistently deliver exceptional cleaning performance while maintaining pipeline integrity. The quality and reliability have exceeded our expectations, resulting in significant cost savings and improved operational efficiency.</blockquote>
-
-                            <h4 class="client-name">Michael Rodriguez</h4>
-                            <p class="designation">Operations Manager, Gulf Coast Refinery</p>
+                            <div class="testimonial-card">
+                                <div class="testimonial-header">
+                                    <div class="client-avatar">
+                                        <i class="fa fa-user-circle"></i>
+                                    </div>
+                                </div>
+                                <blockquote>The Polymer Engineering's foam pigs have revolutionized our pipeline maintenance operations. Their products consistently deliver exceptional cleaning performance while maintaining pipeline integrity. The quality and reliability have exceeded our expectations, resulting in significant cost savings and improved operational efficiency.</blockquote>
+                                <h4 class="client-name">Michael Rodriguez</h4>
+                                <p class="designation">Operations Manager<br><strong>Gulf Coast Refinery</strong></p>
+                            </div>
                         </div>
 
                         <div class="col-md-4">
-                            <blockquote>We've been using The Polymer Engineering's foam pigging solutions for over three years, and the results speak for themselves. Their innovative approach to pipeline cleaning has reduced our maintenance downtime by 40% while improving flow efficiency. Outstanding technical support and product quality.</blockquote>
-
-                            <h4 class="client-name">Sarah Thompson</h4>
-                            <p class="designation">Pipeline Engineering Director, TransEnergy Corp</p>
+                            <div class="testimonial-card">
+                                <div class="testimonial-header">
+                                    <div class="client-avatar">
+                                        <i class="fa fa-user-circle"></i>
+                                    </div>
+                                </div>
+                                <blockquote>We've been using The Polymer Engineering's foam pigging solutions for over three years, and the results speak for themselves. Their innovative approach to pipeline cleaning has reduced our maintenance downtime by 40% while improving flow efficiency. Outstanding technical support and product quality.</blockquote>
+                                <h4 class="client-name">Sarah Thompson</h4>
+                                <p class="designation">Pipeline Engineering Director<br><strong>TransEnergy Corp</strong></p>
+                            </div>
                         </div>
 
                         <div class="col-md-4">
-                            <blockquote>The Polymer Engineering stands out in the industry for their commitment to innovation and customer service. Their foam pig solutions have helped us maintain optimal pipeline performance across our entire network. The team's expertise and responsiveness make them our preferred partner for pipeline maintenance.</blockquote>
-                            <h4 class="client-name">David Chen</h4>
-                            <p class="designation">Chief Technical Officer, Coastal Pipeline Systems</p>
+                            <div class="testimonial-card">
+                                <div class="testimonial-header">
+                                    <div class="client-avatar">
+                                        <i class="fa fa-user-circle"></i>
+                                    </div>
+                                </div>
+                                <blockquote>The Polymer Engineering stands out in the industry for their commitment to innovation and customer service. Their foam pig solutions have helped us maintain optimal pipeline performance across our entire network. The team's expertise and responsiveness make them our preferred partner for pipeline maintenance.</blockquote>
+                                <h4 class="client-name">David Chen</h4>
+                                <p class="designation">Chief Technical Officer<br><strong>Coastal Pipeline Systems</strong></p>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="text-center" style="margin-top: 60px; padding: 40px 0; background: #f4f5f8;">
-                        <h3 style="margin-bottom: 30px; color: #093EB6;">Ready to Optimize Your Pipeline Operations?</h3>
-                        <a href="#contact" class="btn btn-primary" role="button" style="margin-right: 15px;"> GET YOUR FREE QUOTE <i class="fa fa-arrow-right"></i></a>
-                        <button type="button" class="btn btn-default" data-toggle="modal" data-target="#consultationModal"> SCHEDULE CONSULTATION <i class="fa fa-calendar"></i></button>
+                    <div class="text-center testimonial-cta-box">
+                        <h3>Ready to Optimize Your Pipeline Operations?</h3>
+                        <a href="#contact" class="btn btn-primary btn-lg" role="button"> GET YOUR FREE QUOTE <i class="fa fa-arrow-right"></i></a>
+                        <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#consultationModal"> SCHEDULE CONSULTATION <i class="fa fa-calendar"></i></button>
                     </div>
                 </div>
-
             </section>
 
             <section class="home-publications">
                 <div class="container">
                     <div class="row publications">
-                        <div class="col-md-7 col-sm-6">
+                        <div class="col-md-6">
+                            <h2 class="title-2">TECHNICAL INSIGHTS</h2>
+                            <h4 class="subtitle-2">Explore Our Expertise</h4>
+                            <div class="spacer-30"></div>
                             <div class="panel-group" id="accordion">
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
                                         <h4 class="panel-title"> 
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Foam Pig Technology</a>
+                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                                <i class="fa fa-flask panel-icon"></i> Foam Pig Technology
+                                            </a>
                                         </h4>
                                     </div>
                                     <div id="collapseOne" class="panel-collapse collapse in">
@@ -499,7 +555,10 @@
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
                                         <h4 class="panel-title">
-                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Pipeline Maintenance Solutions</a> </h4>
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                                <i class="fa fa-cogs panel-icon"></i> Pipeline Maintenance Solutions
+                                            </a>
+                                        </h4>
                                     </div>
                                     <div id="collapseTwo" class="panel-collapse collapse">
                                         <div class="panel-body">
@@ -510,7 +569,10 @@
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
                                         <h4 class="panel-title">
-                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Quality Assurance & Testing</a> </h4>
+                                            <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                                <i class="fa fa-certificate panel-icon"></i> Quality Assurance & Testing
+                                            </a>
+                                        </h4>
                                     </div>
                                     <div id="collapseThree" class="panel-collapse collapse">
                                         <div class="panel-body">
@@ -522,17 +584,61 @@
                             </div>
                         </div>
 
-                       
+                        <div class="col-md-6">
+                            <h2 class="title-2">WHY CHOOSE US</h2>
+                            <h4 class="subtitle-2">Our Competitive Advantages</h4>
+                            <div class="spacer-30"></div>
+                            
+                            <div class="why-choose-list">
+                                <div class="why-item">
+                                    <div class="why-icon">
+                                        <i class="fa fa-flask"></i>
+                                    </div>
+                                    <div class="why-content">
+                                        <h5>Proprietary Polymer Technology</h5>
+                                        <p>Advanced formulations engineered for maximum performance and durability across all pipeline conditions.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="why-item">
+                                    <div class="why-icon">
+                                        <i class="fa fa-certificate"></i>
+                                    </div>
+                                    <div class="why-content">
+                                        <h5>ISO Certified Manufacturing</h5>
+                                        <p>Industry-leading quality standards with rigorous testing and continuous improvement processes.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="why-item">
+                                    <div class="why-icon">
+                                        <i class="fa fa-clock-o"></i>
+                                    </div>
+                                    <div class="why-content">
+                                        <h5>20+ Years Experience</h5>
+                                        <p>Decades of expertise in pipeline maintenance and foam pig technology innovation.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="why-item">
+                                    <div class="why-icon">
+                                        <i class="fa fa-headphones"></i>
+                                    </div>
+                                    <div class="why-content">
+                                        <h5>24/7 Technical Support</h5>
+                                        <p>Round-the-clock expert assistance and emergency response services for your peace of mind.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
 
-           
-
             <section class="home-partners">
                 <div class="container">
                     <div class="section-title text-center">
-                        <h2 class="subtitle-testimonials title-2"> OUR PARTNERS </h2>
+                        <h2 class="subtitle-testimonials title-2"> TRUSTED BY INDUSTRY LEADERS </h2>
                         <div class="spacer-20"> </div>
                     </div>
 
@@ -540,24 +646,39 @@
                         <div class="logo-slides slides owl-carousel">
                             <div class="item">
                                 <div class="partner-images">
-                                    <img src="images/adani_logo.png" alt="Partner Image 1">
+                                    <img src="images/adani_logo.png" alt="Adani Group">
                                 </div>
                             </div>
 
                             <div class="item">
                                 <div class="partner-images">
-                                    <img src="images/ltgrouplogo.jpg" alt="Partner Image 1">
+                                    <img src="images/ltgrouplogo.jpg" alt="LT Group">
                                 </div>
                             </div>
 
                             <div class="item">
                                 <div class="partner-images">
-                                    <img src="images/reliance_logo.jpeg" alt="Partner Image 1">
+                                    <img src="images/reliance_logo.jpeg" alt="Reliance Industries">
+                                </div>
+                            </div>
+                            
+                            <div class="item">
+                                <div class="partner-images">
+                                    <img src="images/adani_logo.png" alt="Adani Group">
                                 </div>
                             </div>
 
-                        
+                            <div class="item">
+                                <div class="partner-images">
+                                    <img src="images/ltgrouplogo.jpg" alt="LT Group">
+                                </div>
+                            </div>
 
+                            <div class="item">
+                                <div class="partner-images">
+                                    <img src="images/reliance_logo.jpeg" alt="Reliance Industries">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -578,25 +699,25 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input name="name" placeholder="Full Name" class="form-control" type="text" required>
+                                            <input name="name" placeholder="Full Name *" class="form-control" type="text" required>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input name="email" placeholder="Email Address" class="form-control" type="email" required>
+                                            <input name="email" placeholder="Email Address *" class="form-control" type="email" required>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input name="phone" placeholder="Phone Number" class="form-control" type="text" required>
+                                            <input name="phone" placeholder="Phone Number *" class="form-control" type="text" required>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <select name="service" class="form-control" required>
-                                                <option value="">Select Service</option>
+                                                <option value="">Select Service *</option>
                                                 <option value="pipeline-cleaning">Pipeline Cleaning</option>
                                                 <option value="foam-pig-manufacturing">Foam Pig Manufacturing</option>
                                                 <option value="pipeline-maintenance">Pipeline Maintenance</option>
@@ -608,8 +729,9 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <textarea class="form-control" name="message" placeholder="Project Details / Message" rows="5" required></textarea>
+                                    <textarea class="form-control" name="message" placeholder="Project Details / Message *" rows="5" required></textarea>
                                 </div>
+                                <p class="privacy-note"><small><i class="fa fa-lock"></i> Your information is secure and will never be shared with third parties.</small></p>
                                 <div class="text-center">
                                     <button type="submit" class="btn btn-primary" id="js-quote-btn">SEND REQUEST <i class="fa fa-paper-plane"></i></button>
                                 </div>
@@ -631,13 +753,13 @@
                         <div class="modal-body">
                             <form id="consultation_form">
                                 <div class="form-group">
-                                    <input name="name" placeholder="Full Name" class="form-control" type="text" required>
+                                    <input name="name" placeholder="Full Name *" class="form-control" type="text" required>
                                 </div>
                                 <div class="form-group">
-                                    <input name="email" placeholder="Email Address" class="form-control" type="email" required>
+                                    <input name="email" placeholder="Email Address *" class="form-control" type="email" required>
                                 </div>
                                 <div class="form-group">
-                                    <input name="phone" placeholder="Phone Number" class="form-control" type="text" required>
+                                    <input name="phone" placeholder="Phone Number *" class="form-control" type="text" required>
                                 </div>
                                 <div class="form-group">
                                     <input name="company" placeholder="Company Name" class="form-control" type="text">
@@ -706,25 +828,12 @@
 
                     <!-- Footer widgets -->
                     <div class="row widgets">
-                        <div class="col-md-4 col-sm-6">
-                            <div class="about-txt widget">
-                                <img src="images/footer-logo.png" alt="logo" />
-
+                        <div class="col-md-12">
+                            <div class="about-txt widget text-center">
+                                <img src="images/footer-logo.png" alt="The Polymer Engineering Logo" />
                                 <p>The Polymer Engineering is a leading manufacturer of advanced foam pig solutions for pipeline maintenance and integrity. Our proprietary polymer formulations and cutting-edge manufacturing processes ensure optimal pipeline performance, enhanced safety, and reliable operations for energy companies worldwide. </p>
-
-                                <!-- <div class="widgets-social">
-                                    <a href="#"> <i class="fa fa-facebook" aria-hidden="true"></i> </a>
-                                    <a href="#"> <i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                    <a href="#"> <i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                                    <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                </div> -->
                             </div>
                         </div>
-        
-                        <div class="spacer-50 visible-sm"></div>
-
-                        
-           
                     </div>
                     <!-- Footer widgets -->
                 </div>
@@ -738,7 +847,6 @@
                         </div>
                         <div class="col-md-6 text-right">
                             <p> <a href="#"> Terms of use</a> <a href="#">Privacy Policy</a> <span> | </span> Made with <i class="fa fa-heart" aria-hidden="true"></i> by MJ </p>
-
                         </div>
                     </div>
                 </div>
@@ -751,13 +859,9 @@
         <a href="#0" class="cd-top"> Top </a>
 
     </div>
+    <!-- Page Wrapper -->
 
-    <!-- Page Wrapper
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-    <!-- Javascripts
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
+    <!-- Javascripts -->
     <!-- Jquery Library -->
     <script src="js/jquery.min.js"></script>
 
